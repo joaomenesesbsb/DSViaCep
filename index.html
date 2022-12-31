@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DSViaCEP</title>
+
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+    <header class="nav-container">
+        <nav class="container nav-main" >
+            <h1>DSViaCEP</h1>
+            <div class="contact-link">contato</div>
+        </nav>
+    </header>
+    <main>
+        <section id="form-section" class="form-container">
+            <div class="card-form">
+                <form name="newAddress">
+                     <div class="form-control">
+                         <label for="cep"></label>
+                         <input name="cep" id="cep" type="text" class="form-input" placeholder="CEP" >
+                         <div class="error-message" data-error="cep">Campo Requerido</div>
+                    </div>
+                    <div class="form-control">
+                        <label for="street"></label>
+                        <input name="street" id="street" type="text" class="form-input" placeholder="Logradouro" disabled >
+                   </div>
+                   <div class="form-control">
+                        <label for="number"></label>
+                        <input name="number" id="number" type="text" class="form-input" placeholder="Numero" >
+                        <div class="error-message" data-error="number">Campo Requerido</div>
+                    </div>
+                    <div class="form-control">
+                        <label for="city"></label>
+                        <input name="city" id="city" type="text" class="form-input" placeholder="Cidade" disabled>
+                     </div>
+                    <div class="btn-container">
+                        <button name="btnSave" class="form-btn btn-left" type="submit">Salvar</button>
+                        <button name="btnClear" class="form-btn btn-rigth">Limpar</button>
+                     </div>
+                </form>
+            </div>
+        </section>
+        <section id="list-section">
+            <div class="card-cep">
+                <h3>São Paulo</h3>
+                <p class="card-content">Rua dos Jardins, 720</p>
+                <p class="card-cep-content">11200-320</p>
+            </div>
+            <div class="card-cep">
+                <h3>São Paulo</h3>
+                <p class="card-content">Rua dos Jardins, 720</p>
+                <p class="card-cep-content">11200-320</p>
+        </section>
+    </main> 
+    <script type="module" src="js/dsviacep.js"></script>
+</body>
+</html>
