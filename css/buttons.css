@@ -13,6 +13,7 @@
     border: 0;
     font-weight: 700;
     align-items: center;
+    cursor: pointer;
 }
 
 .btn-left {
