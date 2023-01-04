@@ -1,3 +1,4 @@
+@import 'modal.css';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 :root {
@@ -124,7 +125,7 @@ html, body {
     margin-left: 10px;
 }
 
-#list-section {
+.list-container {
     padding: 20px;
 }
 
