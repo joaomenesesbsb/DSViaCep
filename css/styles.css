@@ -1,4 +1,5 @@
 @import 'modal.css';
+@import 'buttons.css';
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
 :root {
@@ -98,31 +99,6 @@ html, body {
 .error-message {
     margin-top: 5px;
     color: var(--color-error);
-}
-
-.btn-container{
-    display: flex;
-    justify-content: space-between;
-}
-
-.form-btn {
-    height: 50px;
-    width: 250px;
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    font-size: 14px;
-    border-radius: 4px;
-    border: 0;
-    font-weight: 700;
-    align-items: center;
-}
-
-.btn-left {
-    margin-right: 10px;
-}
-
-.btn-rigth {
-    margin-left: 10px;
 }
 
 .list-container {

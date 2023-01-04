@@ -1,6 +1,12 @@
+:root {
+    --color-modal-card: #444;
+    --color-modal-card-border: #aaa;
+    --color-white: #fff;
+}
+
 .modal-container {
     position: fixed;
-    right: 0;
+    top: 0;
     left: 0;
 
     background-color: rgba(0, 0, 0, 0.5);
@@ -9,11 +15,30 @@
     z-index: 1;
 
     display: none;
+
+    padding: 20px;
 }
 
 .modal-container.active {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.modal-box {
+    width: 100%;
+    max-width: 480px;
+    background-color: var(--color-modal-card);
+    padding: 20px;
+    border-radius: 10px;
+    border: 10px solid var(--color-modal-card-border);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.modal-content {
+    color: var(--color-white);
+    margin-bottom: 40px;
 }
 
